@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Overpass", sans-serif;
+      }
+      .ch {
+        background-color: hsl(216, 12%, 54%) !important;
+      }
+      .hide-card {
+        visibility: hidden !important;
+      }
+      .hide-Ratings {
+        visibility: hidden !important;
+      }
+    </style>
+  </head>
+  <body style="background-color: hsl(216, 12%, 8%)">
+    <!-- Rating state start -->
+    <div class="container flex flex-row justify-center items-center mt-36">
+      <div
+        class="card one w-80 h-80 shadow-xl"
+        style="background-color: hsl(213, 19%, 18%)"
+      >
+        <div class="card-body">
+          <div
+            class="w-8 h-8 mt-0 rounded-full"
+            style="background-color: hsl(216, 12%, 54%)"
+          >
+            <img
+              src="../interactive-rating-component-main/images/icon-star.svg"
+              alt=""
+              class="mx-2 my-2"
+            />
+          </div>
+          <h2 class="card-title text-white font-medium text-2xl mt-4">
+            How did we do?
+          </h2>
+          <p class="text-gray-500 text-xs font-medium">
+            Please let us know how we did with your support request.All feedback
+            is appreciated to help us improve our offering!
+          </p>
+          <div class="container flex flex-row justify-around items-start">
+            <button
+              class="btn btn-circle bg-gray-600 ch hover:bg-orange-500 active:bg-orange-300"
+            >
+              1
+            </button>
+            <button
+              class="btn btn-circle bg-gray-600 ch hover:bg-orange-500 active:bg-orange-300"
+            >
+              2
+            </button>
+            <button
+              class="btn btn-circle bg-gray-600 ch hover:bg-orange-500 active:bg-orange-300"
+            >
+              3
+            </button>
+            <button
+              class="btn btn-circle bg-gray-600 ch hover:bg-orange-500 active:bg-orange-300"
+            >
+              4
+            </button>
+            <button
+              class="btn btn-circle bg-gray-600 ch hover:bg-orange-500 active:bg-orange-300"
+            >
+              5
+            </button>
+          </div>
+          <div class="card-actions">
+            <button
+              class="btn w-64 rounded-full bg-orange-500 text-white font-medium hover:bg-orange-400"
+              id="klik"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container flex flex-row justify-center items-center absolute pl-64"
+    >
+      <div
+        class="card two w-80 h-80 shadow-xl hide-card absolute"
+        style="margin-top: -21em; background-color: hsl(213, 19%, 18%)"
+      >
+        <div class="card-body">
+          <div class="flex flex-row justify-center items-center">
+            <img
+              src="../interactive-rating-component-main/images/illustration-thank-you.svg"
+              alt=""
+              class=""
+            />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center my-6"
+          >
+            <div
+              class="alert alert-error h-2 w-40 shadow-lg bg-gray-700 flex flex-col items-center justify-center"
+            >
+              <div class="text-xs text-orange-500">You selected 4 out of 5</div>
+            </div>
+            <h2 class="card-title text-2xl font-medium text-white mt-4 mb-3">
+              Thank you!
+            </h2>
+            <p class="text-xs text-gray-500 font-medium">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution text-center text-white">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-xs font-bold"
+        >Frontend Mentor</a
+      >.Coded by <a href="#">DimasOkr</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
